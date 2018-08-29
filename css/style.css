@@ -1,0 +1,630 @@
+/*--------*/
+/*  SETUP */
+/*--------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #545454;
+}
+
+/*--------*/
+/* REUSEABLE */
+/*--------*/
+
+h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.section-break:after {
+    display: block;
+    content: " ";
+    margin: 0 auto;
+    background-color: rgb(207, 207, 207);
+    width: 30rem;
+    height: 1px;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.space {
+    padding: 2%;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*--------*/
+/* MAIN CONTAINER */
+/*--------*/
+
+
+
+/*--------*/
+/* NAV BAR */
+/*--------*/
+
+.main-nav {
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(12, 12, 12);
+    border-bottom: solid 1px rgb(95, 95, 95);
+    display: flex;
+}
+
+.link {
+    flex: 1;
+    align-self: center;
+}
+
+.main-nav span {
+    color: rgb(71, 129, 253);
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-nav a:hover {
+    color: rgb(71, 129, 253);
+}
+
+#pictures-pro {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding-left: 10%;
+}
+
+.nav {
+    align-self: center;
+    padding-right: 2%;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding-right: 2rem;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+
+/*--------*/
+/* HERO IMAGE & TEXT */
+/*--------*/
+
+.hero-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(https://source.unsplash.com/lrmo2hlFYE4/);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text {
+    padding: 4%;
+}
+
+.hero-text h1 {
+    font-size: 6rem;
+    color: #fff;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+/*--------*/
+/* GALLERY SECTION */
+/*--------*/
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+}
+
+.gallery-heading {
+    color: rgb(77, 77, 77);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4.5rem;
+}
+
+.features,
+.features-1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 9rem;
+}
+
+.features div,
+.features-1 div {
+    flex: 1;
+}
+
+.image {
+    overflow: hidden;
+}
+
+.image-animate {
+    transition: all .2s;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-animate:hover {
+    transform: scale(1.15);
+}
+
+
+/*--------*/
+/* TESTIMONIALS SECTION */
+/*--------*/
+
+
+.testiomonials {
+    background: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(https://source.unsplash.com/jchfMCRsu6A);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-heading h3{
+    font-weight: 100;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.63);
+    margin-top: 1%;
+    padding-left: 13rem;
+    padding-right: 13rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    text-transform: uppercase;
+    border: solid 1px #fff;
+    transition: all .3s;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #fff;
+    border: solid 1px #000;
+    opacity: .4;
+}
+
+/*--------*/
+/* FEATURES SECTION */
+/*--------*/
+
+.features-heading {
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.features-heading h2{
+    font-size: 4rem;
+    color: rgb(186, 115, 115);
+}
+
+.features-heading h2:after {
+    display: block;
+    height: 1px;
+    background-color: rgb(207, 207, 207);
+    content: " ";
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.features-wrap {
+    display: flex;
+}
+
+.features-section-list-1 {
+    flex: 1;
+    margin-left: 20%;
+    margin-right: 7%;
+}
+
+.features-section-list-1 h3,
+.features-section-list-2 h3 {
+    padding-top: 1.6rem;
+}
+
+.features-section-list-2 {
+    flex: 1;
+    margin-right: 20%;
+}
+
+/*--------*/
+/* DEMO SECTION */
+/*--------*/
+
+.demo-section {
+    display: flex;
+    padding: 4%;
+}
+
+.demo-image {
+    overflow: hidden;
+    margin-left: 18%;
+    margin-right: 10rem;
+}
+
+.demo-image-1 {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all .2s;
+}
+
+.demo-image-1:hover {
+    transform: scale(1.15);
+}
+
+.demo-text {
+    flex: 1;
+    align-self: center;
+}
+
+.demo-text p {
+    margin-bottom: 3rem;
+    width: 40rem;
+}
+
+.demo-text a {
+    display: block;
+    width: 40rem;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    transition: all 0.3s;
+}
+
+.demo-text a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+/*--------*/
+/* PURCHASE SECTION */
+/*--------*/
+
+.section-purchase {
+    color: #000;
+}
+
+.heading-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.purchase-heading {
+    text-align: center;
+}
+
+.purchase-heading h2 {
+    font-size: 6rem;
+}
+
+.purchase-plans {
+    display: flex;
+}
+
+.subscribe {
+    flex: 1;
+    margin-right: 17rem;
+}
+
+.sub-wrap {
+    float: right;
+    text-align: center;
+}
+
+.subscribe-btn {
+    color: #fff;
+    font-size: 4rem;
+    display: inline-block;
+    background-color: #000;
+    outline: none;
+    overflow: hidden;
+    border-style: none;
+    width: 22.7rem;
+    height: 21rem;
+    border-radius: 100%;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transform: all 0.2s;
+}
+
+.subscribe-btn:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.sub-wrap h4 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 4rem;
+}
+
+.sub-wrap a {
+    display: inline-block;
+    width: 22rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+    border: 1px solid #000;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    transition: all 0.3s;
+}
+
+.sub-wrap a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.buy {
+    flex: 1;
+}
+
+.buy-btn {
+    color: #fff;
+    font-size: 4rem;
+    display: inline-block;
+    background-color: #000;
+    outline: none;
+    overflow: hidden;
+    border-style: none;
+    width: 22.7rem;
+    height: 21rem;
+    border-radius: 100%;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.buy-btn:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.buy-wrap {
+    float: left;
+    text-align: center;
+}
+
+.buy-wrap h4 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 4rem;
+}
+
+.buy-wrap a:first-of-type {
+    display: inline-block;
+    width: 22rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+    border: 1px solid #000;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    transition: all 0.3s;
+}
+
+.buy-wrap a:first-of-type:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.test-drive-heading {
+    margin: auto;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+#test-drive-heading {
+    text-decoration: none;
+    font-size: 3.5rem;
+    color: rgb(47, 162, 255);
+}
+
+#test-drive-heading:hover {
+    opacity: .75;
+}
+
+#large-text {
+    font-size: 3rem;
+}
+
+#small-text {
+    font-size: 2rem;
+}
+
+#discount {
+    display: block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: rgb(49, 179, 255);
+}
+
+#discount:hover {
+    opacity: .75;
+}
+
+/*--------*/
+/* EXTRA FEATURES SECTION */
+/*--------*/
+
+.extra-features-section {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.explore-heading {
+    margin-bottom: 3rem;
+}
+
+.feature-links {
+    margin-left: 23%;
+    margin-right: 23%;
+    line-height: 5rem;
+    margin-bottom: 3rem;
+}
+
+.feature-links a {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+.feature-links a:hover {
+    background-color: rgb(49, 179, 255);
+}
+
+.extra-features {
+    display: inline-block;
+}
+
+.extra-features a {
+    text-decoration: none;
+    color: rgb(38, 154, 221);
+    margin-right: 2rem;
+}
+
+.extra-features a:hover {
+    opacity: .75;
+}
+
+.share {
+    margin-top: 3rem;
+    margin-right: 2rem;
+    display: inline-block;
+}
+
+.big-icon {
+    font-size: 3rem;
+}
+
+#final-message {
+    margin-top: 3rem;
+}
+
+#send-message {
+    color: rgb(39, 138, 196);
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+#send-message:hover {
+    opacity: .75;
+}
+
+.ion-social-facebook {
+    color: rgb(59, 89, 152);
+}
+
+.ion-social-facebook:hover {
+    opacity: .75;
+}
+
+.ion-social-googleplus {
+   color: rgb(211, 72, 54);
+}
+
+.ion-social-googleplus:hover {
+    opacity: .75;
+}
+
+.ion-social-instagram {
+    color:  rgb(251, 57, 88);
+}
+
+.ion-social-instagram:hover {
+    opacity: .75;
+}
+
+.ion-social-twitter {
+    color: rgb(29, 161, 242);
+}
+
+.ion-social-twitter:hover {
+    opacity: .75;
+}
+
+
+/*--------*/
+/*FOOTER SECTION */
+/*--------*/
+
+.footer {
+    height: 20vh;
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.copy-wrap {
+    margin-top: 9rem;
+}
+
+.copyright {
+    color: #fff;
+}
+
+/*--------*/
+/*MEDIA QUERIES */
+/*--------*/
+
