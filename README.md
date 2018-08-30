@@ -12,5 +12,5 @@ This was my first time using flexbox and was curious to see what advantages and 
 
 1. The demo button when hovered over causes the text above it to shift slightly. At 900px breakpoint it causes the elements below it to shift also.
 
-2. Nav bar breaks below 900px. This will be fixed when I finish a new mobile friendly nav bar built with JS. (in progress)
+
 
