@@ -17,6 +17,14 @@
 /* Small phones to small tablets from 600px - 900px */
 @media only screen and (max-width: 900px) {
 
+    .nav {
+        display: none;
+    }
+
+    .hide {
+        display: flex;
+    }
+
     .hero-text h1 {
         font-size: 5rem;
     }

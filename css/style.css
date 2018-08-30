@@ -57,10 +57,55 @@ h3 {
 }
 
 /*--------*/
-/* MAIN CONTAINER */
+/* MOBILE NAV BAR */
 /*--------*/
 
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #242424;
+    height: 14vh;
+    color: #fff;
+}
 
+.mobile-nav a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+.mobile-nav a:hover {
+    opacity: .4;
+}
+
+.contact,
+.share-nav {
+    border-right: solid 1px rgb(95, 95, 95);
+    border-left: solid 1px rgb(95, 95, 95);
+    padding: 1%;
+    height: 100%;
+}
+
+.menu {
+    border-right: solid 1px rgb(95, 95, 95);
+    padding: 1%;
+    height: 100%;
+}
+
+.cart {
+    border-left: solid 1px rgb(95, 95, 95);
+    padding: 1%;
+    height: 100%;
+    margin-right: .5rem;
+}
+
+.move {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
 
 /*--------*/
 /* NAV BAR */
