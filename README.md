@@ -1,6 +1,6 @@
 # Photography-Website
 
-Technologys used : HTML/CSS/Flexbox
+Technologys used : HTML/CSS/JS/Flexbox
 
 This website is not my design.
 
