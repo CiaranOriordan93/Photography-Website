@@ -68,7 +68,8 @@ h3 {
     color: #fff;
 }
 
-.mobile-nav a {
+.mobile-nav a,
+.menu {
     text-decoration: none;
     color: #fff;
     text-align: center;
@@ -87,9 +88,11 @@ h3 {
 }
 
 .menu {
+    position: relative;
     border-right: solid 1px rgb(95, 95, 95);
     padding: 1%;
     height: 100%;
+    width: 5rem;
 }
 
 .cart {
@@ -105,6 +108,30 @@ h3 {
 
 .hide {
     display: none;
+}
+
+
+
+/*--------*/
+/* DROPDOWN BAR MOBILE */
+/*--------*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 22rem;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 1%;
+    border: 1px solid #545454;
+}
+
+.show {
+    display: block;
 }
 
 /*--------*/
@@ -178,12 +205,13 @@ h3 {
 }
 
 .hero-text h1 {
-    font-size: 6rem;
+    font-style: italic;
+    font-size: 8rem;
     color: #fff;
 }
 
 .hero-text h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: #fff;
 }
 
