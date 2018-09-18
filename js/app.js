@@ -1,4 +1,7 @@
-function showDropdown() {
-    document.getElementById("activate").classList.toggle("show");
-}
+const handle = document.querySelector(".menu");
+const activate = document.querySelector(".dropdown-content");
+
+handle.addEventListener("click", () => {
+    activate.classList.toggle("show");
+});
 

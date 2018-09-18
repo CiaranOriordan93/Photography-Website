@@ -64,7 +64,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     background-color: #242424;
-    height: 6vh;
+    height: 7vh;
     color: #fff;
 }
 
@@ -73,6 +73,13 @@ h3 {
     text-decoration: none;
     color: #fff;
     text-align: center;
+}
+
+.menu,
+.contact,
+.share-nav,
+.cart {
+    line-height: 1.2;
 }
 
 .mobile-nav a:hover {
